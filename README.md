@@ -45,7 +45,7 @@ and the service is here:
 I wanted users of the chart to be able to pass in their own functions for some of the logic that the chart needs to perform on their data. Here is a 
 snippet showing the setters on the reusable chart module:
 
-'''
+```
 exports.yValueFunction = function(f) {
     if (!arguments.length) { return yValue; }
     yValue = f;
@@ -57,5 +57,5 @@ exports.yMaxFunction = function(f) {
     yMax = f;
     return this;
 };
-'''
+```
 
