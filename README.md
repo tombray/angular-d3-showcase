@@ -9,6 +9,11 @@
  * Injecting mock services into Directives
  * Nesting directives with transclusion
  * Testing event handlers
+ * Inter-Directive communication using events and shared scope (a basic Mediator pattern)
+ * and more
+ 
+## Getting Started
+[a link](https://github.com/tombray/angular-d3-showcase/blob/master/app/scripts/controllers/chartPodController.js)
 
 ## Integrating D3 with Angular
 I wanted to create a reusable D3 grouped bar chart and wrap it in a service so I could inject that service into a custom directive. 
