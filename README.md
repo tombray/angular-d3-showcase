@@ -13,6 +13,13 @@
  * and more
  
 ## Getting Started
+Assuming you have npm, bower, and grunt installed, the following commands should get you up and running:
+
+```
+npm install
+bower install
+grunt serve```
+
 [a link](https://github.com/tombray/angular-d3-showcase/blob/master/app/scripts/controllers/chartPodController.js)
 
 ## Integrating D3 with Angular
