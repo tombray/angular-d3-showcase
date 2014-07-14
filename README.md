@@ -65,3 +65,16 @@ Then, when I'm calculating the max for my d3.scale.ordinal.domain I can call pro
 y.domain([0, yMax(data)]);
 ```
 
+There are a bunch of tests in the spec, but ultimately I count the groups and bars to make sure they match the data passed in:
+
+```
+it('should create correct number of groups and bars', function() {
+    var f = fixture.datum(dataSet).call(barChart);
+
+    //use some functional programming to count the nodes in dataSet
+    var nodeCount = _.flatten(_.map(dataSet, function(d){ return d.nodes})).length;
+
+    expect(fixture.selectAll('.g')[0].length).toBe(dataSet.length);
+    expect(fixture.selectAll('.bar')[0].length).toBe(nodeCount);
+});
+```
