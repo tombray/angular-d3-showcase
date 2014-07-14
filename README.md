@@ -20,6 +20,11 @@ npm install
 bower install
 grunt serve
 ```
+To run the tests using PhantomJS...
+
+```
+grunt test
+```
 
 [a link](https://github.com/tombray/angular-d3-showcase/blob/master/app/scripts/controllers/chartPodController.js)
 
