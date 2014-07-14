@@ -22,7 +22,7 @@ grunt serve
 ```
 At that point, you should see something like this in your browser:
 
-![screenshot](https://github.com/tombray/angular-d3-showcase/blob/master/docs/images/screenshot.png)
+![screenshot](https://github.com/tombray/angular-d3-showcase/raw/master/docs/images/screenshot.png)
 
 To run the tests using PhantomJS...
 
