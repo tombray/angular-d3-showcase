@@ -30,14 +30,16 @@ To run the tests using PhantomJS...
 grunt test
 ```
 
-[a link](https://github.com/tombray/angular-d3-showcase/blob/master/app/scripts/controllers/chartPodController.js)
-
 ## Integrating D3 with Angular
 I wanted to create a reusable D3 grouped bar chart and wrap it in a service so I could inject that service into a custom directive. 
 I could have chosen to use d3 directly from a directive, but injecting a service allows me to mock that service when I test my directive.
 
-app/services/d3service.js
-test/services/d3ServiceSpec.js
+I developed my D3Service using TDD. The spec is here:
+[d3ServiceSpec](https://github.com/tombray/angular-d3-showcase/blob/master/test/spec/services/d3ServiceSpec.js)
+
+and the service is here:
+
+[d3Service](https://github.com/tombray/angular-d3-showcase/blob/master/app/scripts/services/d3service.js)
 
 
 
