@@ -81,9 +81,7 @@ it('should create correct number of groups and bars', function() {
 
 ##Communication between the chart and a directive, and between directives
 After I had the chart looking the way I wanted, I added some interactivity. The chart exposes a custom event called 'barHover' which
-I listen for in a Directive:
-
-[tbNodeChart.js](https://github.com/tombray/angular-d3-showcase/blob/master/app/scripts/directives/tbNodeChart.js)
+I listen for in a [tbNodeChart directive:](https://github.com/tombray/angular-d3-showcase/blob/master/app/scripts/directives/tbNodeChart.js)
 
 Which, in turn, dispatches an event up to its parent scope:
 
