@@ -90,3 +90,21 @@ barChart.on('barHover',function(obj){
     $scope.$emit('itemHover', obj);
 });
 ```
+
+Tests for this directive use Sinon.js for mocking the d3Service mentioned above. See [tbNodeChart.spec.js](https://github.com/tombray/angular-d3-showcase/blob/master/test/spec/directives/tbNodeChart.spec.js)
+
+In [chartPodController.js](https://github.com/tombray/angular-d3-showcase/blob/master/test/spec/controllers/chartPodController.spec.js) I test to make sure
+the event is handled correctly:
+
+```
+it('should respond to an itemHover event by updating hoveredItem', function(){
+    var mockHoveredItem = {};
+    $controllerConstructor('ChartPodController', {$scope:scope});
+    rootScope.$broadcast('itemHover', mockHoveredItem);
+    expect(scope.hoveredItem).toBe(mockHoveredItem);
+});
+```
+
+The tbChartPod directive then updates its display to show the value of the currently hovered bar.
+
+##More coming soon...
