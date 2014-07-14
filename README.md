@@ -59,3 +59,9 @@ exports.yMaxFunction = function(f) {
 };
 ```
 
+Then, when I'm calculating the max for my d3.scale.ordinal.domain I can call provided yMax function (or use the default I provide):
+
+```
+y.domain([0, yMax(data)]);
+```
+
